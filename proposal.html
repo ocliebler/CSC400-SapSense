@@ -42,8 +42,67 @@
     </nav>
 
     <div class="container">
-        <h1>Proposal Goes Here.</h1>
-    </div>     
+      <div class="px-4 py-5 my-5">
+        <h1 class="display-5 fw-bold" >Project Proposal</h1>
+        <div class="col">
+          <h2>Motivation</h2>
+          <p>
+            For small maple syrup farms and hobbyists, every drop of maple sap 
+            counts. It takes on average 40 gallons of maple sap to make a single 
+            gallon of maple syrup. The traditional technology for collecting maple 
+            sap is as simple as attaching a bucket to a maple tree and drilling in 
+            a tap. For small-scale maple farmers, the labor-intensive part is 
+            walking to each bucket and checking to see which buckets need to be 
+            emptied. If a bucket overflows, precious maple sap can be lost. This 
+            project is to prototype a sensor system that could be used to detect 
+            the sap level in a maple bucket to notify the farmer that the bucket is 
+            ull. While sensor systems for large-scale maple farms do exist, like the 
+            Tap Track system used at Meadowbrook Acres farm 
+            [https://www.farmingmagazine.com/maple/sugarmaking-technology-past-present/], 
+            there isn’t a solution for small scale bucket farms. The sensor system 
+            will use LoRaWAN technology and the Helium network to stay low-cost, 
+            perfect for a smaller farm. A similar project has been undertaken in 
+            the field of beekeeping: https://www.hackster.io/354300/longhive-12d952 .
+          </p>
+          <h2>Project Objective</h2>
+          <p>
+            The goal of this project is to create a proof-of-concept to show how 
+            a low-power, low-cost LoRaWAN sensor on the Helium network can be used 
+            to monitor maple sap collection. 
+          </p>
+          <h2>Features</h2>
+          <p>The sensor will be able to be positioned at the fill line on a bucket 
+            to detect whether the correct sap level has been reached. It will use 
+            very small packets of data to inform the user of the status of the 
+            collection bucket. The user will also be alerted via a notification 
+            when a full bucket is detected. The user will be able to access the 
+            history of the status of the bucket, to see if the bucket has been full 
+            for many hours and likely overflowed. This information will be 
+            accessible to the user through notifications and a web-based 
+            application.</p>
+          <h2>Impact</h2>
+          <p>The main impact of this project will be specifically on maple sap 
+            harvesters, which are often small/hobby farms local to New England 
+            and Canada (including southern Connecticut). If scaled-up to a 
+            full-sized system with many sensors, this project could significantly 
+            reduce the amount of labor-intensive manual checking of a sap 
+            harvesting system while still being affordable to implement and easy 
+            to maintain. </p>
+          <h2>Platform and Technology</h2>
+          <p>A Helium hotspot will be used to provide internet connectivity to 
+            the sensor (representing the sensor system). The sensors will be 
+            assembled using RAKWireless WisBlock kits which the Computer Science 
+            department already has. The sensor will include a LoRa component, 
+            water sensor, and can also include a GPS component to report its 
+            location. The Helium Console will be used during the project to 
+            retrieve sensor data especially while the hardware prototype is built. 
+            The web application to view the sensor data, and the notifications will 
+            access the the Helium console API. Provided that the core features are 
+            reached, the web application will also need to include a map to represent 
+            sensor status geographically if the GPS capability is introduced.</p>
+        </div>
+      </div>
+    </div>       
 
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
